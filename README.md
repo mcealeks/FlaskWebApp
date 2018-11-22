@@ -31,5 +31,3 @@
     * **python webapp.py**
 2. Twój serwer działa
 3. :space_invader: :space_invader: :space_invader: :space_invader:
-    
-
