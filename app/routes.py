@@ -7,19 +7,15 @@ def index():
     return render_template('index.html')
 
 @app.route('/galeria')
-def getGallery():
-    osoby = [
-        'Piotrek', 
-        'Szymon',
-        'Tomek noob',
-        'Olga'
+def galeria():
+    #Tak sie nie robi ale jakos trza zaczac
+    obrazki = [
+        'http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg',
+        'http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg',
+        'http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg',
+        'http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg',
     ]
-    user = {
-        "zalogowany": False,
-        'nick': 'Owca :)'
-    }
-    return render_template('galeria.html',osoby=osoby, user=user)
-
-
+   
+    return render_template('galeria.html', obrazki=obrazki)
 
 
