@@ -6,6 +6,20 @@ from flask import render_template
 def index():
     return render_template('index.html')
 
+@app.route('/galeria')
+def getGallery():
+    osoby = [
+        'Piotrek', 
+        'Szymon',
+        'Tomek noob',
+        'Olga'
+    ]
+    user = {
+        "zalogowany": False,
+        'nick': 'Owca :)'
+    }
+    return render_template('galeria.html',osoby=osoby, user=user)
+
 
 
 
