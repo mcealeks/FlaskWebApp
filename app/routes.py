@@ -9,11 +9,13 @@ def index():
 @app.route('/galeria')
 def galeria():
     #Tak sie nie robi ale jakos trza zaczac
-    animals = [
-        'kotek',
-        'piesek',
-        'tomek'
+    obrazki = [
+        'http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg',
+        'http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg',
+        'http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg',
+        'http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg',
     ]
-    return render_template('galeria.html', animals=animals)
+   
+    return render_template('galeria.html', obrazki=obrazki)
 
 
